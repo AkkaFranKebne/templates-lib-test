@@ -1,17 +1,29 @@
 {
   "name": "@AkkaFranKebne/templates-lib-test",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "test for a custom React component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "Ewa Maria",
   "license": "ISC",
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-webpack5": "^8.1.10",
+    "@storybook/test": "^8.1.10",
     "@types/react": "^17.0.34",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.3.1",
@@ -19,6 +31,7 @@
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.1.10",
     "tslib": "^2.6.3",
     "typescript": "^4.4.4"
   },
