@@ -2,10 +2,14 @@
   "name": "@AkkaFranKebne/templates-lib-test",
   "version": "0.2.1",
   "description": "test for a custom React component library",
+  "type": "module",
   "scripts": {
     "rollup": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "Ewa Maria",
   "license": "ISC",
@@ -22,9 +26,11 @@
     "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
     "@storybook/blocks": "^8.1.10",
     "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.2.4",
     "@storybook/react-webpack5": "^8.1.10",
     "@storybook/test": "^8.1.10",
     "@types/react": "^17.0.34",
+    "@types/react-dom": "^18.3.0",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -32,6 +38,7 @@
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.1.10",
+    "tailwindcss": "^3.4.5",
     "tslib": "^2.6.3",
     "typescript": "^4.4.4"
   },
@@ -46,5 +53,9 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/AkkaFranKebne"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.4"
   }
 }
